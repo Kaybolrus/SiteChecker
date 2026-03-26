@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1A56DB</color>
+    <color name="primary_dark">#1246B5</color>
+    <color name="bg_main">#F0F4F8</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="text_primary">#1A202C</color>
+    <color name="text_secondary">#718096</color>
+    <color name="status_ok">#22863A</color>
+    <color name="status_warn">#B7791F</color>
+    <color name="status_error">#C53030</color>
+    <color name="status_unknown">#A0AEC0</color>
+    <color name="input_border">#CBD5E0</color>
+</resources>
