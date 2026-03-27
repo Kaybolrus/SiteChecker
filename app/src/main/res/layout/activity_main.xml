@@ -73,6 +73,8 @@
                 android:textSize="13sp"
                 android:textColor="@color/text_primary"
                 android:singleLine="true"/>
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
 
             <Button
                 android:id="@+id/btnAdd"
