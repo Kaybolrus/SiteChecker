@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1246B5</color>
+    <color name="primary_dark">#0D3990</color>
+    <color name="bg_main">#0F1117</color>
+    <color name="bg_card">#1E2130</color>
+    <color name="text_primary">#F0F4F8</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="status_ok">#22C55E</color>
+    <color name="status_warn">#F59E0B</color>
+    <color name="status_error">#EF4444</color>
+    <color name="status_unknown">#94A3B8</color>
+    <color name="input_border">#2D3748</color>
+    <color name="ping_text_good">#86EFAC</color>
+    <color name="ping_text_ok">#FDE68A</color>
+    <color name="ping_text_slow">#FCA5A5</color>
+</resources>

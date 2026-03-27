@@ -3,53 +3,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/bg_main"
-    android:padding="0dp">
+    android:background="@color/bg_main">
 
-    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primary"
-        android:orientation="vertical"
-        android:padding="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
         android:elevation="4dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="🌐 Site Checker"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Проверка доступности сайтов"
-            android:textColor="#CCFFFFFF"
-            android:textSize="13sp"
-            android:layout_marginTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site Checker"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проверка доступности сайтов"
+                android:textColor="#CCFFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnTheme"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:background="@drawable/bg_theme_btn"
+            android:contentDescription="Тема"/>
     </LinearLayout>
 
-    <!-- Input area -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@color/bg_card"
-        android:padding="16dp"
+        android:padding="12dp"
         android:elevation="2dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Добавить сайт"
-            android:textColor="@color/text_secondary"
-            android:textSize="12sp"
-            android:textAllCaps="true"
-            android:letterSpacing="0.1"
-            android:layout_marginBottom="8dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,21 +63,21 @@
             <EditText
                 android:id="@+id/etUrl"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
-                android:hint="https://example.com"
+                android:text="https://"
                 android:inputType="textUri"
                 android:background="@drawable/bg_input"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textColor="@color/text_primary"
                 android:singleLine="true"/>
 
             <Button
                 android:id="@+id/btnAdd"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:text="+"
                 android:textSize="22sp"
@@ -86,31 +89,27 @@
         <Button
             android:id="@+id/btnCheck"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
             android:text="▶  Проверить все"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="bold"
-            android:background="@drawable/bg_btn_check"
-            android:elevation="2dp"/>
+            android:background="@drawable/bg_btn_check"/>
     </LinearLayout>
 
-    <!-- Divider label -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="СПИСОК САЙТОВ"
         android:textColor="@color/text_secondary"
         android:textSize="11sp"
-        android:textAllCaps="true"
-        android:letterSpacing="0.12"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="6dp"/>
+        android:letterSpacing="0.1"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"/>
 
-    <!-- Empty state -->
     <TextView
         android:id="@+id/tvEmpty"
         android:layout_width="match_parent"
@@ -122,7 +121,6 @@
         android:padding="32dp"
         android:visibility="gone"/>
 
-    <!-- Results list -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -136,8 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"/>
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
     </ScrollView>
-
 </LinearLayout>
